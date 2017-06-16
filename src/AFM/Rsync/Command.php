@@ -149,7 +149,7 @@ class Command
 		}
 
 		if(!empty($this->parameters))
-			$command[] = implode(" ", $this->parameters);
+			$command[] = implode(" ", array_reverse($this->parameters));
 
 		$stringCommand = implode(" ", $command);
 
